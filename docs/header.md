@@ -18,7 +18,8 @@ You can specify:
 
 ## Examples
 
-Allways pin the module version with tag! The examples omit this simplify this README maintenance or cargo-culting mistakes.
+Allways pin the module version with tag!
+The examples below omit this to simplify this README's maintenance and avoid cargo-culting mistakes.
 
 ```
 module "nix01" {
