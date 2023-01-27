@@ -16,6 +16,8 @@ You can specify:
 
 ## Examples
 
+Allways pin the module version with tag! The examples omit this simplify this README maintenance or cargo-culting mistakes.
+
 ```
 module "nix01" {
     source = "github.com/mskender/azure-terraform-vm"
@@ -92,7 +94,7 @@ No modules.
 | <a name="input_private_ip"></a> [private\_ip](#input\_private\_ip) | Private IP address to assign to machine. If not specified, dynamic assigmnet will be used. | `string` | `""` | no |
 | <a name="input_public_key"></a> [public\_key](#input\_public\_key) | Public key to use for passworless auth. | `string` | `""` | no |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | Resource Group to deploy VM in. Mandatory. | `string` | n/a | yes |
-| <a name="input_source_image"></a> [source\_image](#input\_source\_image) | Storage Image reference. | `map(string)` | <pre>{<br>  "offer": "",<br>  "publisher": "",<br>  "sku": "",<br>  "version": ""<br>}</pre> | no |
+| <a name="input_source_image"></a> [source\_image](#input\_source\_image) | Storage Image reference. If omitted, will use Ubuntu 16/Windows 2016 default images. | `map(string)` | <pre>{<br>  "offer": "",<br>  "publisher": "",<br>  "sku": "",<br>  "version": ""<br>}</pre> | no |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | Subnet ID for NIC placement. Mandatory | `string` | n/a | yes |
 | <a name="input_suffix"></a> [suffix](#input\_suffix) | Suffix to use for all resources. Optional. | `string` | `""` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to assign to all resources created by this module. | `map(string)` | `{}` | no |

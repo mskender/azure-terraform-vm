@@ -75,7 +75,7 @@ variable "os_disk_size" {
 }
 
 variable source_image {
-  description = "Storage Image reference."
+  description = "Storage Image reference. If omitted, will use Ubuntu 16/Windows 2016 default images."
   type = map(string)
   default ={
     publisher = ""

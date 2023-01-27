@@ -18,6 +18,8 @@ You can specify:
 
 ## Examples
 
+Allways pin the module version with tag! The examples omit this simplify this README maintenance or cargo-culting mistakes.
+
 ```
 module "nix01" {
     source = "github.com/mskender/azure-terraform-vm"
@@ -50,3 +52,4 @@ module "doze01" {
     subnet_id = azurerm_subnet.example.id
     private_ip = "10.0.10.10"
 }
+```
