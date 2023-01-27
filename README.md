@@ -6,7 +6,7 @@ This is a module to provide a simple way to create your VM's (Linux or Windows).
 It is not exhaustive in its options - in which case it's simpler to just use TF resource than a module.
 
 You can specify:
-- Machine OS type (linux or windows, as of azurerm v2 provider these use 2 separate resources)
+- Machine OS type (linux or windows, as azurerm provider >= 2.x splits it to two separate resources)
 - Instance size, disk size
 - Create static/dynamic NIC
 - Create and attach a public IP
@@ -54,7 +54,9 @@ module "doze01" {
 
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.40.0 |
 
 ## Providers
 
