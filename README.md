@@ -16,7 +16,8 @@ You can specify:
 
 ## Examples
 
-Allways pin the module version with tag! The examples omit this simplify this README maintenance or cargo-culting mistakes.
+Allways pin the module version with tag!
+The examples below omit this to simplify this README's maintenance and avoid cargo-culting mistakes.
 
 ```
 module "nix01" {
@@ -56,13 +57,13 @@ module "doze01" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.40.0 |
+| <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 3.40.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 3.40.0 |
 
 ## Modules
 
